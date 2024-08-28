@@ -1,9 +1,9 @@
 import express from 'express';
+import dotenv from 'dotenv'
+dotenv.config()
 import authRoutes from './routes/authRoutes.js';
 import taskRoutes from './routes/taskRoutes.js';
 import mongoose from 'mongoose';
-import dotenv from 'dotenv'
-dotenv.config()
 
 const app = express()
 
