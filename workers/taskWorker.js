@@ -1,4 +1,4 @@
-import redis from '../config/redis';
+import redis from '../config/redis.js';
 
 const processTask = async (queueKey) => {
     const task = await redis.lpop(queueKey);

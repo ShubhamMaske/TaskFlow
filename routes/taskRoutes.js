@@ -6,10 +6,10 @@ import auth from '../middlewares/auth.js';
 
 
 // enqueue task
-router.get('/enqueue', auth, enqueueTask)
+router.post('/enqueue', auth, enqueueTask)
 
 // dequeue task
-router.put('/dequeue', auth, dequeueTask)
+router.get('/dequeue', auth, dequeueTask)
 
 
 export default router;
